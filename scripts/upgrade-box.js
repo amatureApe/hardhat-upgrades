@@ -13,7 +13,6 @@ async function main() {
   await upgradeTx.wait(1);
 
   const proxyBoxV2 = await ethers.getContractAt("BoxV2", transparentProxy.address);
-  console.log(proxyBoxV2);
   const versionV2 = await proxyBoxV2.version();
   console.log(versionV2);
 }

@@ -121,4 +121,5 @@ out.sol
 .vscode
 
 node_modules
+deployments
 artifacts
