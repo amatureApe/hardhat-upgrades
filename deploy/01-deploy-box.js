@@ -10,6 +10,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
   const box = await deploy("Box", {
     from: deployer,
     args: [],
+    log: true,
     waitConfirmations: network.config.blockConfirmations,
     proxy: {
       proxyContract: "OpenZeppelinTransparentProxy",
